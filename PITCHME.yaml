@@ -56,6 +56,6 @@ remote-control : true
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "Introducción a la Informática"
-description : "Introducción inicial a los conceptos de computación."
+title : "Representación de Información"
+description : "Reperesentación de información."
 thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
