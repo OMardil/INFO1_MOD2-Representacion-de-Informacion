@@ -9,9 +9,10 @@ Representan las @css[imp123](26 letras) del alfabeto inglés. Desde "a" hasta "z
 Representan los números de base decimal.
 * 0123456789
 
++++
 ## Caracteres especiales
 
-
++++
 ## Caracteres de Control
 No tienen representación gráfica
 * TAB
@@ -21,7 +22,7 @@ No tienen representación gráfica
 * Line Feed
 * Carriage Return
 
-
++++
 ## Caracteres gráficos / Íconos
 →㱺☞⇏➴⤱☃★ @emoji[worried] @emoji[sunny] @emoji[car] @emoji[stew] @emoji[joy]
 

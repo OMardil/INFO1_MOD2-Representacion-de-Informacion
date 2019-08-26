@@ -24,5 +24,6 @@ Para una circuito es fácil representarlo: +3.3 volts ó 0 volts.
 ![Hard Drive](/assets/img/hard_drive_short_optimized.gif)
 @snapend
 
++++
 ## Digital
 Cámaras digitales
