@@ -7,7 +7,7 @@
 Para transmitir información escrita, los humanos utilizamos un alfabeto, o un conjunto de símbolos. Cada símbolo es denominado un @css[imp123](caracter).
 
 
-+++?include=assets/Caracteres.md
++++?include=Caracteres.md
 
 +++
 ## Binario
