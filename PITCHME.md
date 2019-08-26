@@ -7,8 +7,9 @@
 Para transmitir información escrita, los humanos utilizamos un alfabeto, o un conjunto de símbolos. Cada símbolo es denominado un @css[imp123](caracter).
 
 
-+++?include=/assets/Caracteres.md
++++?include=assets/Caracteres.md
 
++++
 ## Binario
 ### Binary Digit
 
@@ -18,7 +19,10 @@ Estos valores se pueden interpetar también como `TRUE` o `FALSE`, o los estados
 
 Para una circuito es fácil representarlo: +3.3 volts ó 0 volts.
 
-+++?image=/assets/img/hard_drive_short_optimized.gif
++++
+@snap[midpoint span-100]
+![Hard Drive](/assets/img/hard_drive_short_optimized.gif)
+@snapend
 
 ## Digital
 Cámaras digitales
