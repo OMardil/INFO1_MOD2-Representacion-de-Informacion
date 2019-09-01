@@ -52,11 +52,15 @@ published : true
 
 #
 # Code lines
-code-line-numbers : true
+code-line-numbers : false
 
 #
 # Remote settings
 remote-control : true
+
+#
+# Math
+mathjax : TeX-MML-AM_HTMLorMML-full
 
 #
 # Twitter Card Settings [Pro Only]
