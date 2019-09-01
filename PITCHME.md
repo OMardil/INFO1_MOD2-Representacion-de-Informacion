@@ -20,8 +20,8 @@ Todas las instrucciones o interacciones con computadores se pueden @css[imp123](
 Los caracteres, internamente, están formados por @css[imp123](bits).
 
 +++
-## Binario
-### Binary Digit
+## Bits 
+### Binary DigIT
 
 Un bit es la unidad más básica de información en el mundo digital. Un bit puede representar dos valores: 0 ó 1.
 
