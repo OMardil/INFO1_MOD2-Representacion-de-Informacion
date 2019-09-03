@@ -66,7 +66,7 @@ Sistema Decimal
 @[17](Y así continuamos sucesivamente!)
 @snapend
 
-+++
+---
 # Sistema Binario
 
 +++ 
@@ -340,3 +340,73 @@ Problema 1:
 `\[
 17_{10} \to x_{2}
 \]`
+
+---
+@snap[text-09]
+# Sistema Hexadecimal y Octal
+@snapend
+
++++ 
+### Hexadecimal y Octal
+Para evitar largos conjuntos de caracteres cuando queramos representar números en binario, utilizamos las bases intermedias de @css[imp123](Octal) y @css[imp123](Hexadecimal).
+
++++
+### Octal
+@snap[span-100]
+
+Cada dígito en esta representación puede representar hasta 8 valores.
+
+@box[text-white bg-orange span-30 fragment](Número menor# 0)
+@box[text-white bg-green span-30 fragment](Número Mayor# 7)
+@snapend
+
++++?code=assets/data/octal.txt&lang = js
+@[1](Comenzamos el conteo)
+@[2](Sumamos 1)
+@[3](Sumamos 1)
+@[4](Sumamos 1)
+@[5](Sumamos 1)
+@[6](Sumamos 1)
+@[7](Sumamos 1)
+@[8](Alcanzamos el máximo valor por dígito)
+@[9](Comenzamos de nuevo desde 10)
+@[10-16](Sumamos 1 hasta llegar a 17)
+@[17](Comenzamos desde 20)
+@[18-21](Y así sucesivamente hasta que llegamos al 77, y de ahí pasamos al 100)
+
+@snap[north-east span-100 text-06 text-gray]
+Sistema Octal
+@snapend
+
++++
+### Hexadecimal
+@snap[span-100]
+Cada dígito en esta representación puede representar hasta 15 distintos valores. 
+Para esto, se utilizan los números del 0-1, y las letras de la A-F.
+@box[text-white bg-orange span-30 fragment](Número menor# 0)
+@box[text-white bg-green span-30 fragment](Número Mayor# F)
+@snapend
+
++++?code=assets/data/hexadecimal.txt&lang = js
+@[1](Comenzamos el conteo)
+@[2](Sumamos 1)
+@[3](Sumamos 1)
+@[4](Sumamos 1)
+@[5](Sumamos 1)
+@[6](Sumamos 1)
+@[7](Sumamos 1)
+@[8](Sumamos 1)
+@[9](Sumamos 1)
+@[10](Sumanos 1)
+@[11](El 10 decimal lo representamos con una "A")
+@[12](El 11 decimal lo representamos con una "B")
+@[13](El 12 decimal lo representamos con una "C")
+@[14](El 13 decimal lo representamos con una "D")
+@[15](El 14 decimal lo representamos con una "E")
+@[16](Máximo valor representable por una posición, "F")
+@[17](Volvemos a comenzar desde el 10)
+@[18-33](Y asi sucesivamente!)
+
+@snap[north-east span-100 text-06 text-gray]
+Sistema Hexadecimal
+@snapend
