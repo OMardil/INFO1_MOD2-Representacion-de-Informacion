@@ -93,12 +93,12 @@ Sistema Binario
 @[1](Comenzamos con el número de menor valor)
 @[2](Llegamos al último posible valor en la escala binaria)
 @[3](Agregamos un 1 al principio, y volvemos a comenzar desde 0)
-@[4](Sumamos 1)
-@[5](Llegamos al máximo valor que se puede representar con dos dígitos)
-@[6](Agregamos un 1 al principio, y volvemos a comenzar desde 00)
+@[4](Sumamos 1, llegamos al máximo valor que se puede representar con dos dígitos)
+@[5](Agregamos un 1 al principio, y volvemos a comenzar desde 100)
+@[6]
 @[7]
 @[8]
-@[9]
+@[9](Agregamos un 1 al principio, y volvemos a comenzar desde 1000)
 @[10]
 @[11]
 @[12]
@@ -106,9 +106,237 @@ Sistema Binario
 @[14]
 @[15]
 @[16]
-@[17]
-@[18](Y así continuamos sucesivamente!)
+@[17](Y así continuamos sucesivamente!)
+@snapend
+
++++ 
+### Conversiones de Binario a Decimal
+@snap[span-100 text-08]
+1. Dado un número en binario:
+`\[
+110100_{2} 
+\]`
+<br>
+@snapend
+
+@snap[span-100 fragment text-08 text-left]
+2. Comenzamos numerando las posiciones de derecha a izquierda, comenzando en cero.
+`\[
+110100_{2} =  1\cdot2^5 + 1\cdot2^4 + 0\cdot2^3 + 1\cdot2^2 + 0\cdot2^1  + 0\cdot2^0
+\]`
+<br>
+`\[
+110100_{2} =  32_{10} + 16_{10} + 0_{10} + 4_{10} + 0_{10}  + 0_{10}
+\]`
+<br>
+@snapend
+
+@snap[span-100 fragment text-08]
+3. Completamos la suma:
+`\[
+110100_{2} =  52_{10}
+\]`
+@snapend
++++
+
+### Otro ejemplo...
+@snap[span-100 text-06]
+Problema 1:
+`\[
+10101011_{2}
+\]`
+<br>
+`\[
+\require{cancel}
+10101011_{2} =  1\cdot2^7 + \cancel{0\cdot2^6} + 1\cdot2^5 + \cancel{0\cdot2^4} + 1\cdot2^3 + \cancel{0\cdot2^2} + 1\cdot2^1 + 1\cdot2^0
+\]`
+<br>
+`\[
+\require{cancel}
+10101011_{2} =  1\cdot2^7 + 1\cdot2^5 + 1\cdot2^3 + 1\cdot2^1+ 1\cdot2^0
+\]`
+<br>
+`\[
+10101011_{2} =  128_{10} + 32_{10} + 8_{10} + 2_{10} + 1_{10}
+\]`
+<br>
+`\[
+10101011_{2} =  171_{10}
+\]`
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_12.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Dividimos el número a convertir entre 2, que es la base deseada)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_11.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Apuntamos el valor del residuo.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_10.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Se baja el valor del resultado de la división. Se repite la operación y apuntamos el residuo.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_9.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Se baja el valor del resultado de la división. Se repite la operación y apuntamos el residuo.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_8.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](El resultado de la división entera 125/2 = 62, con un residuo de 1. Apuntamos el residuo y el resultado de la división entera.)
+@snapend
+
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_7.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Repetimos la operación hasta que no podamos dividir el número.)
+@snapend
+
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_6.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Repetimos la operación hasta que no podamos dividir el número.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_5.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Repetimos la operación hasta que no podamos dividir el número.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_4.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Repetimos la operación hasta que no podamos dividir el número.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_3.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](Repetimos la operación hasta que no podamos dividir el número.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_2.png)
+@snapend
+
+@snap[east span-50 text-08 text-right]
+@css[text-pink](La división entera 1/2 = 0, con un residuo de 1. Apuntamos el 1 y concluimos.)
+@snapend
+
++++?color=white
+@transition[none]
+@snap[north-east span-40 h4-black] 
+#### Conversiones de Decimal a Binario
+@snapend
+@snap[west span-80]
+![](assets/img/dec_conv/step_1.png)
+@snapend
+
+@snap[south-east span-50 text-08 text-right]
+@css[text-pink](Para finalizar, copiamos los números de abajo hacia arriba.)
 @snapend
 
 +++
-# Sistema Hexadecimal
+### Trabajo individual
+`\[
+100001_{2} \to x_{10}
+\]`
+
+`\[
+11111111_{2} \to x_{10}
+\]`
+
+`\[
+254_{10} \to x_{2}
+\]`
+
+`\[
+17_{10} \to x_{2}
+\]`

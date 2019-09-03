@@ -45,3 +45,24 @@ Sin embargo, al utilizar el Byte como la medida base de tamaño de almacenamient
 @snap[span-30 east]
 ![Curious](assets/img/curious.png)
 @snapend
+
++++
+### Tamaño de discos
+![HDD_sizes](assets/img/HDD_sizes.png)
+
+@snap[south fragment span-100 text-08]
+Cuando Snow Leopard salió al mercado, Apple modificó la forma en la que Mac OS X calcula los tamaños de los archivos. 
+<br>
+@css[text-bold](Mac OS X comenzó a utilizar potencias de 10 (1 KB = 1000 bytes))
+<br>
+@css[text-bold](Windows continúa utilizando potencias de 2 (1 KB = 1024 bytes))
+@snapend
+
++++
+@snap[west span-70]
+![](assets/img/file_size.png)
+@snapend
+
+@snap[east span-50 fragment text-left]
+Si queremos conocer el tamaño exacto de un archivo, hay que abrir sus propiedades.
+@snapend
