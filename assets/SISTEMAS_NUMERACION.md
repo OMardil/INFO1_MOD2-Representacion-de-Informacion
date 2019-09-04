@@ -109,18 +109,18 @@ Sistema Binario
 @[17](Y así continuamos sucesivamente!)
 @snapend
 
-+++ 
++++?color=white
 ### Conversiones de Binario a Decimal
-@snap[span-100 text-08]
-1. Dado un número en binario:
+@snap[span-100 text-08 text-black]
+@css[text-pink](1. Dado un número en binario:)
 `\[
 110100_{2} 
 \]`
 <br>
 @snapend
 
-@snap[span-100 fragment text-08 text-left]
-2. Comenzamos numerando las posiciones de derecha a izquierda, comenzando en cero.
+@snap[span-100 fragment text-08 text-left text-black]
+@css[text-pink](2. Comenzamos numerando las posiciones de derecha a izquierda, comenzando en cero.)
 `\[
 110100_{2} =  1\cdot2^5 + 1\cdot2^4 + 0\cdot2^3 + 1\cdot2^2 + 0\cdot2^1  + 0\cdot2^0
 \]`
@@ -131,17 +131,17 @@ Sistema Binario
 <br>
 @snapend
 
-@snap[span-100 fragment text-08]
-3. Completamos la suma:
+@snap[span-100 fragment text-08 text-black]
+@css[text-pink](3. Completamos la suma:)
 `\[
 110100_{2} =  52_{10}
 \]`
 @snapend
-+++
 
++++?color=white
 ### Otro ejemplo...
-@snap[span-100 text-06]
-Problema 1:
+@snap[span-100 text-06 text-black]
+@css[text-pink](Problema 1:)
 `\[
 10101011_{2}
 \]`
@@ -323,8 +323,9 @@ Problema 1:
 @css[text-pink](Para finalizar, copiamos los números de abajo hacia arriba.)
 @snapend
 
-+++
++++?color=white
 ### Trabajo individual
+@snap[text-black span-100]
 `\[
 100001_{2} \to x_{10}
 \]`
@@ -340,6 +341,7 @@ Problema 1:
 `\[
 17_{10} \to x_{2}
 \]`
+@snapend
 
 ---
 @snap[text-09]
@@ -410,3 +412,75 @@ Para esto, se utilizan los números del 0-1, y las letras de la A-F.
 @snap[north-east span-100 text-06 text-gray]
 Sistema Hexadecimal
 @snapend
+
++++?color=white
+#### Binario a Octal
+
+@snap[span-100 text-black]
+@css[text-pink](Dado el siguiente número binario:)
+`\[ 100111_{2} \to x_{8} \]`
+@snapend
+
+@snap[fragment span-100 text-black]
+@css[text-pink](1. De izquierda a derecha, agrupamos grupos de 3 bits.)
+`\[ \fbox{100}\fbox{111}_{2} \to x_{8} \]`
+@snapend
+
+@snap[fragment span-100 text-black]
+@css[text-pink](2. Convertimos cada sección a octal. Recuerda que cada posición puede tener valores del 0 al 7.)
+`\[ \fbox{100}_{2} = 4\]`
+`\[ \fbox{111}_{2} = 7\]`
+@snapend
+
+@snap[fragment span-100 text-black]
+@css[text-pink](3. Juntamos los números.)
+`\[ 100111_{2} = 47_{8} \]`
+@snapend
+
++++?color=white
+#### Binario a Hexadecimal
+@snap[span-100 text-black text-08]
+@css[text-pink](Dado el siguiente número binario:)
+`\[ 110000101101_{2} \to x_{16} \]`
+@snapend
+
+@snap[fragment span-100 text-black text-08]
+@css[text-pink](1. De derecha a izquierda, agrupamos grupos de 4 bits.)
+`\[ \fbox{1100}\fbox{0010}\fbox{1101}_{2} \to x_{16} \]`
+@snapend
+
+@snap[fragment span-100 text-black text-08]
+@css[text-pink](2. Convertimos cada sección a hexadecimal. Recuerda que cada posición puede tener valores del 0 al F.)
+`\[ \fbox{1100}_{2} = 12_{10} = C_{16}\]`
+`\[ \fbox{0010}_{2} = 2_{10}  = 2_{16}\]`
+`\[ \fbox{1101}_{2} = 13_{10} = D_{16}\]`
+@snapend
+
+@snap[fragment span-100 text-black text-08]
+@css[text-pink](3. Juntamos los números.)
+`\[ 110000101101_{2} = C2D_{16} \]`
+@snapend
+
++++?color=white
+### Conversiones de Hexadecimal a Decimal
+@snap[span-100 text-08 text-black]
+@css[text-pink](Dado un número en hexadecimal:)
+`\[ 23E_{16} \]`
+<br>
+@snapend
+
+@snap[span-100 text-08 text-black fragment]
+@css[text-pink](1. Extendemos el polinonio a través de multiplicar cada dígito *convertido a decimal* por la base origen elevado a su posición.)
+`\[ \text{Recordemos que: } E_{16} = 14_{10} \]`
+`\[ 23E_{16} = 2\cdot16^2 + 3\cdot16^1 + 14\cdot16^0 \]`
+`\[ 23E_{16} = 512_{10} + 48_{10} + 14_{10} \]`
+@snapend
+
+@snap[span-100 text-08 text-black fragment]
+<br>
+@css[text-pink](2. Completando la suma)
+`\[ 23E_{16} = 574_{10} \]`
+@snapend
+
++++
+## Este mismo procedimiento puede ser usado para convertir cualquier base a decimal!
