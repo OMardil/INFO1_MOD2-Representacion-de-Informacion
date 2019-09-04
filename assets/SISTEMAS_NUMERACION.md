@@ -389,6 +389,13 @@ Para esto, se utilizan los números del 0-1, y las letras de la A-F.
 @box[text-white bg-green span-30 fragment](Número Mayor# F)
 @snapend
 
++++
+### Hexadecimal
+En ciencias computacionales, la base decimal la vemos representada con un prefijo "0x":
+
+`\[ \text{0xF3}\]`
+`\[ \text{0x6A23} \]`
+
 +++?code=assets/data/hexadecimal.txt&lang = js
 @[1](Comenzamos el conteo)
 @[2](Sumamos 1)

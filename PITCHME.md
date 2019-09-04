@@ -74,3 +74,5 @@ Ejemplo:
 ---?include=assets/BYTES.md
 
 ---?include=assets/SISTEMAS_NUMERACION.md
+
+---?include=assets/CODIFICACION.md
