@@ -23,7 +23,7 @@ De acuerdo con la @css[imp123](JEDEC Solid State Technology Association):
 \]`
 
 `\[
-1 \text{ Gibabyte} = 2^{30} \text{ bytes } = 1024 \text{ Megabytes} 
+1 \text{ Gigabyte} = 2^{30} \text{ bytes } = 1024 \text{ Megabytes} 
 \]`
 
 `\[

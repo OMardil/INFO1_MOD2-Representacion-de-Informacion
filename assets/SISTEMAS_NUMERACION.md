@@ -429,7 +429,7 @@ Sistema Hexadecimal
 @snapend
 
 @snap[fragment span-100 text-black]
-@css[text-pink](1. De izquierda a derecha, agrupamos grupos de 3 bits.)
+@css[text-pink](1. De derecha a izquierda, agrupamos grupos de 3 bits.)
 `\[ \fbox{100}\fbox{111}_{2} \to x_{8} \]`
 @snapend
 
