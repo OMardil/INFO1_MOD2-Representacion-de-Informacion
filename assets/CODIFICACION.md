@@ -44,7 +44,7 @@ Por ejemplo, para codificar el siguiente alfabeto:
 @snapend 
 
 @snap[fragment span-100 text-07]
-Necesaríamos:
+Serían necesarios:
 `\[ n \ge 3.32 log(10) \]`
 `\[ n \ge 3.32 \]`
 <br>
